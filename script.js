@@ -3,6 +3,11 @@ function toggleMenu() {
   navLinks.classList.toggle("active");
 }
 
+function closeMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.remove("active");
+}
+
 function joinGym(event) {
   event.preventDefault();
 
