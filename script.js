@@ -15,8 +15,19 @@ function joinGym(event) {
     return;
   }
 
+  const whatsappMessage =
+    "New Gym Enquiry%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+    "Selected Plan: " + encodeURIComponent(plan) + "%0A" +
+    "Gym: Master Gym";
+
+  const whatsappUrl = "https://wa.me/919491347496?text=" + whatsappMessage;
+
   document.getElementById("message").innerText =
-    "Thank you " + name + "! Your enquiry for the " + plan + " plan has been received. We will contact you soon.";
+    "Opening WhatsApp with your enquiry...";
+
+  window.open(whatsappUrl, "_blank");
 
   event.target.reset();
 }
