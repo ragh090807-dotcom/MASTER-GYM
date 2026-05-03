@@ -6,7 +6,7 @@
 
   <title>Master Gym | Premium Fitness Club Hyderabad</title>
 
-  <meta name="description" content="Master Gym in Gandi Maisamma Hyderabad. Best gym for weight loss, strength training, personal coaching and fitness transformation.">
+  <meta name="description" content="Master Gym in Gandi Maisamma Hyderabad. Best gym for weight loss, strength training, personal training and fitness transformation.">
 
   <link rel="stylesheet" href="style.css" />
 
@@ -20,11 +20,11 @@
     <a href="#home" class="logo">MASTER<span>GYM</span></a>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#programs">Programs</a></li>
-      <li><a href="#trainers">Trainers</a></li>
-      <li><a href="#plans">Plans</a></li>
-      <li><a href="#contact">Join</a></li>
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#programs" onclick="closeMenu()">Programs</a></li>
+      <li><a href="#trainers" onclick="closeMenu()">Trainers</a></li>
+      <li><a href="#plans" onclick="closeMenu()">Plans</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Join</a></li>
     </ul>
 
     <a href="tel:9491347496" class="nav-btn">Call Now</a>
@@ -76,11 +76,14 @@
 <section class="about">
   <div class="about-content">
     <p class="eyebrow">About Master Gym</p>
+
     <h2>Train in a space built for discipline, strength and transformation.</h2>
 
     <p>
       Master Gym gives you a focused fitness environment with strength equipment,
-      cardio training, personal coaching, and goal-based workout support.
+      cardio training, personal coaching, and goal-based workout support. Whether
+      your goal is weight loss, muscle gain, strength building, or general fitness,
+      our trainers help you stay consistent and improve every day.
     </p>
 
     <div class="about-features">
@@ -93,11 +96,13 @@
 
   <div class="about-card">
     <h3>Why Choose Us?</h3>
+
     <ul>
       <li>Professional trainer guidance</li>
       <li>Beginner-friendly workout plans</li>
       <li>Strength and conditioning programs</li>
       <li>Motivating premium gym environment</li>
+      <li>Flexible membership plans</li>
     </ul>
   </div>
 </section>
@@ -110,19 +115,26 @@
     <div class="program-card">
       <span>01</span>
       <h3>Strength Training</h3>
-      <p>Build muscle, power and endurance using proper technique and progressive training.</p>
+      <p>
+        Build muscle, power and endurance using proper technique and progressive
+        training.
+      </p>
     </div>
 
     <div class="program-card">
       <span>02</span>
       <h3>Weight Loss</h3>
-      <p>Burn fat with cardio, functional workouts, consistency and trainer support.</p>
+      <p>
+        Burn fat with cardio, functional workouts, consistency and trainer support.
+      </p>
     </div>
 
     <div class="program-card">
       <span>03</span>
       <h3>Personal Training</h3>
-      <p>Get one-on-one attention with goal-focused workouts and faster progress.</p>
+      <p>
+        Get one-on-one attention with goal-focused workouts and faster progress.
+      </p>
     </div>
   </div>
 </section>
@@ -178,7 +190,7 @@
     <div class="plan-card">
       <h3>Monthly</h3>
       <h2>₹999</h2>
-      <p>Perfect for beginners</p>
+      <p>Perfect for beginners who want to start their fitness journey.</p>
       <a href="#contact">Select Plan</a>
     </div>
 
@@ -186,14 +198,14 @@
       <div class="badge">Popular</div>
       <h3>Quarterly</h3>
       <h2>₹2499</h2>
-      <p>Best for consistent progress</p>
+      <p>Best for consistent progress and visible fitness improvement.</p>
       <a href="#contact">Select Plan</a>
     </div>
 
     <div class="plan-card">
       <h3>Yearly</h3>
       <h2>₹8999</h2>
-      <p>Best value for long-term fitness</p>
+      <p>Best value for long-term strength, fitness and transformation.</p>
       <a href="#contact">Select Plan</a>
     </div>
   </div>
@@ -207,19 +219,19 @@
     <div class="program-card">
       <span>✓</span>
       <h3>No Hidden Fees</h3>
-      <p>Clear membership plans with simple pricing.</p>
+      <p>Clear membership plans with simple and transparent pricing.</p>
     </div>
 
     <div class="program-card">
       <span>✓</span>
       <h3>Certified Trainers</h3>
-      <p>Get support from experienced fitness coaches.</p>
+      <p>Get support from experienced fitness coaches and trainers.</p>
     </div>
 
     <div class="program-card">
       <span>✓</span>
       <h3>Result-Oriented Training</h3>
-      <p>Focused workouts for strength, weight loss and fitness.</p>
+      <p>Focused workouts for strength, weight loss and overall fitness.</p>
     </div>
   </div>
 </section>
@@ -249,6 +261,7 @@
 <section id="contact" class="contact">
   <div class="contact-left">
     <p class="eyebrow">Join Master Gym</p>
+
     <h2>Start today. Your strongest version is waiting.</h2>
 
     <div class="contact-detail">
@@ -286,6 +299,7 @@
     </select>
 
     <button type="submit">Send Enquiry on WhatsApp</button>
+
     <p id="message"></p>
   </form>
 </section>
