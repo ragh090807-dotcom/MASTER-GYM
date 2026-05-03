@@ -20,6 +20,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -39,7 +40,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
-  background: rgba(5, 5, 5, 0.85);
+  background: rgba(5, 5, 5, 0.86);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
@@ -109,7 +110,7 @@ footer span {
   min-height: 100vh;
   position: relative;
   background:
-    linear-gradient(90deg, rgba(0,0,0,0.96), rgba(0,0,0,0.7), rgba(0,0,0,0.15)),
+    linear-gradient(90deg, rgba(0,0,0,0.96), rgba(0,0,0,0.72), rgba(0,0,0,0.25)),
     url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=90");
   background-size: cover;
   background-position: center;
@@ -380,7 +381,7 @@ footer span {
 
 .offer-section {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 
 .offer-box {
@@ -388,32 +389,33 @@ footer span {
     linear-gradient(135deg, rgba(215,177,91,1), rgba(159,122,38,1)),
     #d7b15b;
   color: #000;
-  padding: 55px 40px;
+  padding: 58px 45px;
   border-radius: 34px;
   text-align: center;
   box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
 .offer-small {
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 900;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
-.offer-box {
-  background: linear-gradient(135deg, #d7b15b, #9f7a26);
+.offer-box h2 {
   color: #000;
-  padding: 55px 45px;
-  border-radius: 34px;
-  text-align: center;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+  font-family: "Anton", sans-serif;
+  font-size: clamp(34px, 5vw, 62px);
+  line-height: 1.05;
+  margin-bottom: 18px;
 }
 
-.offer-box h2,
-.offer-box p,
-.offer-small {
-  color: #000;
+.offer-box p {
+  color: #111;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .offer-box a {
@@ -425,6 +427,11 @@ footer span {
   border-radius: 50px;
   text-decoration: none;
   font-weight: 900;
+  transition: 0.3s;
+}
+
+.offer-box a:hover {
+  transform: translateY(-4px);
 }
 
 .trainer-card {
@@ -586,10 +593,17 @@ footer span {
   color: #000;
   font-weight: 900;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+.join-form button:hover {
+  transform: translateY(-3px);
+}
+
 #message {
   color: var(--gold);
   font-weight: 800;
+  margin-top: 5px;
 }
 
 .location iframe {
@@ -703,6 +717,10 @@ footer p {
   .plan-card,
   .testimonial-card {
     padding: 28px;
+  }
+
+  .offer-box {
+    padding: 42px 24px;
   }
 
   .floating-whatsapp {
