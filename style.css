@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+}
+
+header {
+  background: #000;
+  padding: 18px 8%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: #ff1e1e;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+              url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 8%;
+}
+
+.hero h1 {
+  font-size: 55px;
+  max-width: 700px;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #ddd;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff1e1e;
+  color: white;
+  padding: 14px 28px;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid #ff1e1e;
+}
+
+section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ff1e1e;
+}
+
+.about p {
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.card {
+  background: #161616;
+  padding: 35px 25px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+}
+
+.card h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.card h2 {
+  color: white;
+  margin-top: 15px;
+}
+
+.popular {
+  border: 2px solid #ff1e1e;
+  transform: scale(1.05);
+}
+
+.contact form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, button {
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background: #ff1e1e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 18px;
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.buttons a {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 12px 22px;
+  margin: 8px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.location p {
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .popular {
+    transform: none;
+  }
+}
