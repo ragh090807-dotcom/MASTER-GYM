@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Gym | Hyderabad</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2>Master Gym</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#contact">Join</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <h1>Transform Your Body at Master Gym</h1>
+    <p>Premium fitness training in Gandi Maisamma, Hyderabad.</p>
+    <a href="#contact" class="btn">Join Now</a>
+    <a href="tel:9491347496" class="btn outline">Call Now</a>
+  </div>
+</section>
+
+<section class="about">
+  <h2>About Master Gym</h2>
+  <p>
+    Master Gym helps you build strength, fitness, confidence, and discipline with modern equipment,
+    expert guidance, and a motivating workout environment.
+  </p>
+</section>
+
+<section id="programs" class="programs">
+  <h2>Our Programs</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Strength Training</h3>
+      <p>Build muscle and improve power with professional equipment.</p>
+    </div>
+
+    <div class="card">
+      <h3>Weight Loss</h3>
+      <p>Burn fat with guided workouts and cardio training.</p>
+    </div>
+
+    <div class="card">
+      <h3>Personal Training</h3>
+      <p>Get one-on-one training support for faster results.</p>
+    </div>
+  </div>
+</section>
+
+<section id="plans" class="plans">
+  <h2>Membership Plans</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Monthly</h3>
+      <p>Best for beginners</p>
+      <h2>₹999</h2>
+    </div>
+
+    <div class="card popular">
+      <h3>Quarterly</h3>
+      <p>Most popular plan</p>
+      <h2>₹2499</h2>
+    </div>
+
+    <div class="card">
+      <h3>Yearly</h3>
+      <p>Best value</p>
+      <h2>₹8999</h2>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Join Master Gym</h2>
+
+  <form onsubmit="joinGym(event)">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="tel" id="phone" placeholder="Phone Number" required />
+    <select id="plan" required>
+      <option value="">Select Plan</option>
+      <option>Monthly</option>
+      <option>Quarterly</option>
+      <option>Yearly</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <div class="buttons">
+    <a href="tel:9491347496">Call: 9491347496</a>
+    <a href="https://wa.me/919491347496" target="_blank">WhatsApp</a>
+  </div>
+</section>
+
+<section class="location">
+  <h2>Our Location</h2>
+  <p>Gandi Maisamma, Hyderabad, Telangana 500043</p>
+
+  <iframe
+    src="https://www.google.com/maps?q=Gandi%20Maisamma%2C%20Hyderabad%2C%20Telangana%20500043&output=embed"
+    width="100%"
+    height="350"
+    style="border:0;"
+    loading="lazy">
+  </iframe>
+</section>
+
+<footer>
+  <p>© 2026 Master Gym. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
