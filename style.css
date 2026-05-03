@@ -13,6 +13,16 @@ body {
   background: #050505;
   color: #ffffff;
   overflow-x: hidden;
+  animation: fadeIn 0.9s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 :root {
@@ -92,6 +102,7 @@ footer span {
   border: none;
   color: white;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .hero {
@@ -365,6 +376,51 @@ footer span {
 .testimonial-card p {
   color: var(--soft);
   line-height: 1.8;
+}
+
+.offer-section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.offer-box {
+  background:
+    linear-gradient(135deg, rgba(215,177,91,1), rgba(159,122,38,1)),
+    #d7b15b;
+  color: #000;
+  padding: 55px 40px;
+  border-radius: 34px;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+}
+
+.offer-small {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.offer-box h2 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.offer-box p {
+  font-weight: 700;
+}
+
+.offer-box a {
+  display: inline-block;
+  margin-top: 28px;
+  background: #000;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 900;
 }
 
 .trainer-card {
