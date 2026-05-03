@@ -1,109 +1,396 @@
-body {
+* {
   margin: 0;
-  font-family: Arial;
-  background: #080808;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-header {
-  background: black;
-  padding: 15px 8%;
+body {
+  background: #050505;
+  color: #fff;
 }
 
-nav {
+.header {
+  background: rgba(0,0,0,0.9);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(212,175,55,0.25);
+}
+
+.navbar {
+  width: 88%;
+  margin: auto;
+  padding: 18px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
+.logo {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #d4af37;
+}
+
+.nav-links {
   list-style: none;
+  display: flex;
+  gap: 28px;
 }
 
-nav a {
-  color: white;
+.nav-links a {
+  color: #fff;
   text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #d4af37;
+}
+
+.nav-call {
+  background: #d4af37;
+  color: #000;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
 }
 
 .hero {
-  height: 90vh;
+  min-height: 92vh;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.95), rgba(0,0,0,0.65), rgba(0,0,0,0.25)),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
-  padding: 8%;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-  url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48");
-  background-size: cover;
+}
+
+.hero-content {
+  width: 88%;
+  margin: auto;
+  max-width: 720px;
+}
+
+.tag {
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .hero h1 {
-  font-size: 50px;
+  font-size: 68px;
+  line-height: 1.05;
+  margin-bottom: 22px;
+}
+
+.hero-text {
+  color: #ddd;
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 620px;
+}
+
+.hero-buttons {
+  margin-top: 35px;
 }
 
 .btn {
+  display: inline-block;
   background: #d4af37;
-  padding: 12px 25px;
-  color: black;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 35px;
   text-decoration: none;
-  margin-right: 10px;
+  font-weight: bold;
+  margin-right: 12px;
 }
 
-.outline {
+.btn.secondary {
   background: transparent;
+  color: #fff;
   border: 2px solid #d4af37;
-  color: white;
 }
 
-section {
-  padding: 60px 8%;
+.stats {
+  width: 88%;
+  margin: -55px auto 0;
+  background: #111;
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 20px;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.stats div {
   text-align: center;
 }
 
-.cards {
+.stats h2 {
+  color: #d4af37;
+  font-size: 38px;
+}
+
+.stats p {
+  color: #ccc;
+}
+
+.about {
+  width: 88%;
+  margin: auto;
+  padding: 90px 0;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 40px;
+  align-items: center;
 }
 
-.card {
-  background: #151515;
-  padding: 25px;
-  border-radius: 10px;
+.about h2,
+.contact h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
-.popular {
-  border: 2px solid #d4af37;
+.about p,
+.contact-info p {
+  color: #ccc;
+  line-height: 1.8;
+  font-size: 17px;
 }
 
-.trainers img {
+.about-box {
+  background: #111;
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid rgba(212,175,55,0.25);
+}
+
+.about-box h3 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.about-box li {
+  margin-bottom: 14px;
+  color: #ddd;
+}
+
+.section {
+  width: 88%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 45px;
+}
+
+.program-grid,
+.trainer-grid,
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.program-card,
+.trainer-card,
+.plan-card {
+  background: linear-gradient(180deg, #151515, #0b0b0b);
+  padding: 35px;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.program-card:hover,
+.trainer-card:hover,
+.plan-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212,175,55,0.5);
+}
+
+.program-card h3,
+.plan-card h3 {
+  color: #d4af37;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.program-card p,
+.plan-card p {
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.trainer-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.trainer-card img {
   width: 100%;
-  height: 200px;
+  height: 330px;
   object-fit: cover;
-  border-radius: 10px;
 }
 
-input, select, button {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
+.trainer-card div {
+  padding: 25px;
 }
 
-button {
-  background: #d4af37;
-  border: none;
+.trainer-card h3 {
+  font-size: 24px;
 }
 
-.buttons a {
+.trainer-card p {
+  color: #d4af37;
+  margin: 8px 0;
+}
+
+.trainer-card span {
+  color: #bbb;
+}
+
+.plan-card {
+  text-align: center;
+}
+
+.plan-card h2 {
+  font-size: 42px;
+  margin: 18px 0;
+}
+
+.plan-card a {
   display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background: white;
-  color: black;
+  margin-top: 20px;
+  background: #d4af37;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 30px;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.featured {
+  border: 2px solid #d4af37;
+  transform: scale(1.04);
+}
+
+.contact {
+  width: 88%;
+  margin: auto;
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+
+.contact-info h3 {
+  color: #d4af37;
+  margin-top: 20px;
+}
+
+.join-form {
+  background: #111;
+  padding: 35px;
+  border-radius: 22px;
+  border: 1px solid rgba(212,175,55,0.25);
+}
+
+.join-form input,
+.join-form select,
+.join-form button {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+.join-form button {
+  background: #d4af37;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#message {
+  color: #d4af37;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.location {
+  width: 88%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  border-radius: 22px;
+  border: 1px solid rgba(212,175,55,0.25) !important;
 }
 
 footer {
+  background: #000;
   text-align: center;
-  padding: 20px;
-  background: black;
+  padding: 25px;
+  color: #aaa;
+  border-top: 1px solid rgba(212,175,55,0.25);
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .stats,
+  .about,
+  .program-grid,
+  .trainer-grid,
+  .plan-grid,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    margin-top: 0;
+  }
+
+  .featured {
+    transform: none;
+  }
+
+  .nav-call {
+    display: none;
+  }
 }
